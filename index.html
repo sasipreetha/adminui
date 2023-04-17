@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+     User Details
+        </title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <center>
+        <div class="container">
+            <h2 class="page-header">User details</h2>
+        
+        <div class="search">
+            <form action="#">
+                <input id="ib" type="text"
+                    placeholder=" Search by name,email or role"
+                     onkeyup="Search()" class="form-control">
+            </form>
+        </div>
+        <br><br>
+        
+    </div>
+    <div class="container mt-5 mb-5">
+<table class="table table-light table-striped" id="liststring">
+<thead>
+    <tr>
+        <th scope="col"><input id ="che" type="checkbox" onclick="checkAll()" class="c4"></th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Role</th>
+        <th scope="col">Actions</th>
+    </tr>
+</thead>
+<tbody id="data">
+
+</tbody>
+</table>
+
+<nav>
+    <ul class="pagination">
+        <li class="page-item"><button class="page-link mx-2" id="deletebutton" onclick="deleteall()">Delete</button></li>
+        <li class="page-item"><button class="page-link mx-2" id="previousbutton">Previous</button></li>
+        <li class="page-item"><button class="page-link mx-2" id="nextbutton">Next</button></li>
+    </ul>
+</nav>
+    </div>
+</center>
+<script src="main.js"></script>
+    </body>
+</html>
